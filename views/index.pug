@@ -3,3 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  h2 Messages
+  ul
+    for message in messages
+      li
+        p Text: #{message.text}
+        p User: #{message.user}
+        p Date: #{message.added}
